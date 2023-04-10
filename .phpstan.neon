@@ -1,0 +1,23 @@
+parameters:
+	level: 8
+	paths:
+		- app
+		- public
+		- scripts
+	phpVersion: 80000
+	bootstrapFiles:
+		- bootstrap.php
+	checkMissingIterableValueType: false
+	ignoreErrors:
+		-
+			message: '#is always (true|false)#'
+			path: scripts/mailer.php
+	excludePaths:
+		- */views/*
+		- scripts/install.php
+	universalObjectCratesClasses:
+		- vakata\user\User
+		- vakata\user\UserInterface
+		- vakata\phptree\Node
+		- vakata\database\schema\Entity
+		- helpers\html\TableRow

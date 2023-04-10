@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Видео излъчване</title>
+        <link rel="icon" href="./favicon.ico" sizes="any">
+        <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+        <link href="./css/main.css" rel="stylesheet" />
+        <link href="./css/landing.css" rel="stylesheet" />
+        <link href="./css/video-js.css" rel="stylesheet" />
+        <meta property="og:title" content="Видео излъчване от СИК" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://evideo.bg/landing.html" />
+        <meta property="og:image" content="https://evideo.bg/images/evideo-og-image.png" />
+        <script>
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["setDoNotTrack", true]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+              var u="//track.uslugi.io/";
+              _paq.push(['setTrackerUrl', u+'matomo.php']);
+              _paq.push(['setSiteId', '25']);
+              var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+              g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="landing">
+            <a href="#" class="instruction" style="display:none">
+                <span>Вие сте представител на СИК?</span>
+                Гледайте инструкция
+                <small>за видеоизлъчването в деня на изборите </small>
+            </a>
+            <div class="landing__content">
+                <h1 class="landing-title">
+                    Видео<br />
+                    излъчване от <br />сик
+                </h1>
+                <h2 class="landing-subtitle">Избори за народни представители <span>2 април 2023</span></h2>
+                <p>На този сайт ще можете да наблюдавате онлайн видеоизлъчването на живо на преброяването на бюлетините и попълването на протоколите от изборите за народни представители на 2 април 2023 г.</p>
+                <h3 class="landing-notice">Излъчването ще започне след края на гласуването в изборния ден.</h3>
+            </div>
+        </div>
+        <div class="modal" style="position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.8); z-index:9999;">
+            <video id="my-video" style="width:1280px; max-height:90%; max-width:90%; display:block; margin:4rem auto;" class="video-js" controls preload="auto" paused="true" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/EnTOHQJkvIU"}] }'>
+                <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that</p>
+            </video>
+        </div>
+        <script src="./scripts/video.min.js"></script>
+        <script src="./scripts/youtube.js"></script>
+        <script>
+            var v = videojs(document.querySelector('video'));
+            document.querySelector('.instruction').style.display = 'block';
+            document.querySelector('.instruction').addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector('.modal').style.display = 'block';
+            });
+            document.querySelector('.modal').addEventListener('click', function (e) {
+                if (e.target.className === 'modal') {
+                    v.pause();
+                    document.querySelector('.modal').style.display = 'none';
+                }
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+# deny from all
+
+# protect hidden directories
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule "(^|/)\." - [F]
+RewriteRule ^(/)?$ public [L]
+</IfModule>

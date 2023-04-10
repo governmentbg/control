@@ -1,0 +1,157 @@
+{
+    "name" : "vakata/webadmin",
+    "description" : "A basic platform for building systems",
+    "license" : "proprietary",
+    "type": "project",
+    "config" : {
+        "optimize-autoloader" : true,
+        "classmap-authoritative": true,
+        "sort-packages" : true,
+        "bin-compat": "full",
+        "platform-check" : false,
+        "allow-plugins": {
+            "dg/composer-cleaner": true,
+            "mouf/nodejs-installer": true,
+            "vakata/frontend-dependencies": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vakata/nodejs-installer"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/vakata/web-push-php.git"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-iconv": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-simplexml": "*",
+        "ext-sockets": "*",
+        "ext-zip": "*",
+        "chillerlan/php-qrcode": "^3.4",
+        "league/plates": "^3.3",
+        "minishlink/web-push": "dev-master as 7.0.0",
+        "monolog/monolog": "^1.22",
+        "tecnickcom/tcpdf": "^6.6",
+        "vakata/authentication": "^3.1",
+        "vakata/cache": "^2.4",
+        "vakata/certificate": "^5.5",
+        "vakata/collection": "^1.5",
+        "vakata/config": "^2.0.1",
+        "vakata/database": "^4.0",
+        "vakata/di": "^2.0",
+        "vakata/files": "^3.4",
+        "vakata/http": "^3.0.7",
+        "vakata/ids": "^2.0",
+        "vakata/image": "^2.1",
+        "vakata/intl": "^2.0",
+        "vakata/jwt": "^3.0",
+        "vakata/mail": "^1.2",
+        "vakata/phptree": "^3.1",
+        "vakata/random": "^2.0",
+        "vakata/session": "^2.0",
+        "vakata/spreadsheet": "^2.0",
+        "vakata/user": "^4.0",
+        "vakata/validation": "^1.7"
+    },
+    "require-dev" : {
+        "dg/composer-cleaner": "^2.2",
+        "vakata/frontend-dependencies": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "helpers\\": "app/classes/helpers/",
+            "modules\\": "app/classes/modules/",
+            "middleware\\": "app/classes/middleware/",
+            "tests\\" : "tests"
+        }
+    },
+    "extra": {
+        "cleaner-ignore": {
+            "vakata/nodejs-installer": true,
+            "mouf/nodejs-installer": true
+        },
+        "mouf": {
+            "nodejs": {
+                "forceLocal": true
+            }
+        },
+        "vakata" : {
+            "frontend-dependencies" : {
+                "install" : false,
+                "update" : false,
+                "target" : "public/assets/static/",
+                "dependencies" : {
+                    "jquery": {
+                        "version": "^3.3.1",
+                        "src": "dist/jquery.min.js"
+                    },
+                    "perfect-scrollbar": {
+                        "version": "1.3.0",
+                        "src": "{dist/perfect-scrollbar.min.js,css/perfect-scrollbar.css}"
+                    },
+                    "plupload": {
+                        "version": "^2.3.7",
+                        "src": "js/plupload.full.min.js"
+                    },
+                    "leaflet": {
+                        "version": "^1.4.0",
+                        "src": "{dist/leaflet.css,dist/leaflet.js,dist/images}"
+                    },
+                    "tinymce": "^5.3.0",
+                    "fomantic-ui-css": {
+                        "version": "^2.8.0",
+                        "src" : "{semantic.min.*,themes}"
+                    },
+                    "jq-tablesort": {
+                        "version": "0.0.3",
+                        "src": "dist/tablesort.min.js"
+                    },
+                    "jstree": {
+                        "version": "^3.3.7",
+                        "src": "dist/*"
+                    },
+                    "moment": {
+                        "version": "^2.24.0",
+                        "src": "min/*"
+                    },
+                    "urijs": {
+                        "version": "^1.19.0",
+                        "src": "src/URI.min.js"
+                    },
+                    "fabric": {
+                        "version": "^2.6.0",
+                        "src": "dist/fabric.js"
+                    }
+                }
+            }
+        }
+    },
+    "scripts": {
+        "tools": "@php scripts/tools.php",
+        "phpstan": [ "@php tools/phpstan.phar clear-result-cache", "@php tools/phpstan.phar analyze -c .phpstan.neon" ],
+        "psalm": "@php tools/psalm.phar --config=.psalm.xml --no-diff --no-progress --no-suggestions --no-cache",
+        "phan": "@php tools/phan.phar -k .phan.php --allow-polyfill-parser --no-progress-bar",
+        "phpcs": "@php tools/phpcs.phar --standard=PSR12 --extensions=php --ignore=*/vendor/*,*/node_modules/*,*/storage/* ./",
+        "phpcsfix": "@php tools/phpcbf.phar --standard=PSR12 --extensions=php --ignore=*/vendor/*,*/node_modules/*,*/storage/* ./",
+        "phpunit": "@php tools/phpunit.phar --bootstrap bootstrap.php --cache-result-file=tests/phpunit.result.cache tests",
+        "phpmd": "@php tools/phpmd.phar ./ text .phpmd.xml --exclude */views/*,*/vendor/*,*/tests/*",
+        "semantic": "@php scripts/semantic.php",
+        "username": "@php scripts/username.php",
+        "env": "@php scripts/cache_env.php",
+        "frontend": [ "@frontend-dependencies", "@semantic" ],
+        "database-install": [ "@php scripts/migrations.php install" ],
+        "database-up": [ "@php scripts/migrations.php up" ],
+        "database-setup": [ "helpers\\Migrations::setup" ],
+        "database": [ "@database-setup", "@database-install" ],
+        "update-keys": [ "@php scripts/update_keys.php" ],
+        "static" : [ "@phpstan", "@psalm", "@phan", "@phpmd" ],
+        "test" : [ "@static", "@phpcs", "@phpunit" ],
+        "post-install" : [ "@php scripts/install.php", "@database", "@frontend", "@username", "@env" ]
+    }
+}

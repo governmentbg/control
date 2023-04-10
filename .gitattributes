@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.txt text
+*.php text
+*.html text
+*.js text
+*.css text
+*.json text
+*.md text
+*.neon text
+.htaccess text
+composer.lock text
+.env text

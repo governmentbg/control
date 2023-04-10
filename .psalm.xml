@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<psalm
+    errorLevel="2"
+    autoloader="vendor/autoload.php"
+    resolveFromConfigFile="true"
+    useDocblockTypes="true"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="https://getpsalm.org/schema/config"
+    xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="app/classes/helpers" />
+        <directory name="app/classes/middleware" />
+        <directory name="app/classes/modules" />
+        <directory name="public" />
+        <directory name="scripts" />
+        <ignoreFiles>
+            <directory name="vendor" />
+            <directory name="app/classes/modules/*/*/views" />
+        </ignoreFiles>
+    </projectFiles>
+    <issueHandlers>
+        <PossiblyUndefinedArrayOffset errorLevel="suppress" />
+        <UnresolvableInclude>
+            <errorLevel type="suppress">
+                <file name="scripts/update.php" />
+            </errorLevel>
+        </UnresolvableInclude>
+        <PossiblyNullArgument>
+            <errorLevel type="suppress">
+                <file name="bootstrap.php" />
+            </errorLevel>
+        </PossiblyNullArgument>
+    </issueHandlers>
+    <universalObjectCrates>
+        <class name="vakata\user\User" />
+        <class name="vakata\phptree\Node" />
+        <class name="vakata\database\schema\Entity" />
+        <class name="helpers\html\TableRow" />
+    </universalObjectCrates>
+</psalm>

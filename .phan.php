@@ -1,0 +1,71 @@
+<?php
+
+use Phan\Issue;
+
+return [
+    'target_php_version' => null,
+    'directory_list' => [
+        "app/classes/helpers",
+        "app/classes/middleware",
+        "app/classes/modules",
+        "public",
+        "scripts",
+        "vendor/"
+    ],
+    'file_list' => [
+        'bootstrap.php'
+    ],
+    'exclude_analysis_directory_list' => [
+        'vendor/'
+    ],
+    'exclude_file_regex' => '@.*/views/.*\.php@',
+    'allow_missing_properties' => true,
+    'minimum_severity' => Issue::SEVERITY_LOW,
+    'suppress_issue_types' => ['PhanTypeMismatchReturnSuperType'],
+    'pretend_newer_core_functions_exist' => true,
+    'allow_missing_properties' => false,
+    'null_casts_as_any_type' => false,
+    'null_casts_as_array' => false,
+    'array_casts_as_null' => false,
+    'strict_method_checking' => false,
+    'strict_param_checking' => false,
+    'strict_property_checking' => true,
+    'strict_return_checking' => true,
+    'strict_object_checking' => true,
+    'scalar_implicit_cast' => false,
+    'scalar_array_key_cast' => false,
+    'scalar_implicit_partial' => [],
+    'convert_possibly_undefined_offset_to_nullable' => false,
+    'ignore_undeclared_variables_in_global_scope' => false,
+    'backward_compatibility_checks' => false,
+    'check_docblock_signature_return_type_match' => false,
+    'check_docblock_signature_param_type_match' => false,
+    'prefer_narrowed_phpdoc_param_type' => true,
+    'prefer_narrowed_phpdoc_return_type' => true,
+    'analyze_signature_compatibility' => true,
+    'guess_unknown_parameter_type_using_default' => false,
+    'allow_overriding_vague_return_types' => true,
+    'infer_default_properties_in_construct' => true,
+    'enable_extended_internal_return_type_plugins' => true,
+    'phpdoc_type_mapping' => [ ],
+    'dead_code_detection' => false,
+    'unused_variable_detection' => false,
+    'force_tracking_references' => false,
+    'redundant_condition_detection' => true,
+    'error_prone_truthy_condition_detection' => false,
+    'warn_about_redundant_use_namespaced_class' => true,
+    'quick_mode' => false,
+    'simplify_ast' => true,
+    'enable_class_alias_support' => false,
+    'generic_types_enabled' => true,
+    'warn_about_undocumented_throw_statements' => false,
+    'warn_about_undocumented_exceptions_thrown_by_invoked_functions' => false,
+    'max_literal_string_type_length' => 1000,
+    'consistent_hashing_file_order' => false,
+    'assume_real_types_for_internal_functions' => true,
+    'globals_type_map' => [],
+    'enable_include_path_checks' => true,
+    'warn_about_relative_include_statement' => true,
+    'skip_slow_php_options_warning' => false,
+    'ignore_undeclared_functions_with_known_signatures' => false
+];

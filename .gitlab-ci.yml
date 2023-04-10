@@ -1,0 +1,46 @@
+image: giti.is-bg.net:5050/docker-images/php:8
+
+stages:
+  - test
+
+cache:
+  paths:
+    - vendor/
+    - tools/
+
+before_script:
+  - php scripts/tools.php
+  - php tools/composer.phar install --no-scripts --no-interaction
+  - touch .env.php
+  - touch .env
+  - echo "<?php return null;" > .env.php
+
+phpstan:
+  stage: test
+  allow_failure: true
+  script:
+    - php tools/composer.phar phpstan
+
+phan:
+  stage: test
+  allow_failure: true
+  script:
+    - php tools/phan.phar -k .phan.php --allow-polyfill-parser --no-progress-bar
+
+psalm:
+  stage: test
+  allow_failure: true
+  script:
+    - php tools/psalm.phar --config=.psalm.xml --no-diff --no-progress --no-suggestions
+
+phpmd:
+  stage: test
+  allow_failure: true
+  script:
+    - php tools/phpmd.phar ./ text .phpmd.xml --exclude */views/*,*/vendor/*,*/tests/*
+
+phpcs:
+  stage: test
+  allow_failure: true
+  script:
+    - php tools/phpcs.phar --standard=PSR12 --extensions=php --ignore=*/vendor/*,*/node_modules/*,*/storage/* ./

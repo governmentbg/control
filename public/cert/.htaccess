@@ -1,0 +1,14 @@
+<IfModule mod_ssl.c>
+    SSLVerifyClient Optional
+    SSLVerifyDepth 3
+    SSLOptions +OptRenegotiate
+    SSLRenegBufferSize 16777216
+    <FilesMatch "\.(cgi|shtml|pl|asp|php)$">
+        SSLOptions +StdEnvVars -FakeBasicAuth +ExportCertData -StrictRequire +OptRenegotiate
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.*)$ index.php?%{QUERY_STRING} [PT,L]
+</IfModule>

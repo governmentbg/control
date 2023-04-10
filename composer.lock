@@ -1,0 +1,1984 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "92c4ab7b5ea3df26c2361ac479991d98",
+    "packages": [
+        {
+            "name": "chillerlan/php-qrcode",
+            "version": "3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chillerlan/php-qrcode.git",
+                "reference": "468603b687a5fe75c1ff33857a45f1726c7b95a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chillerlan/php-qrcode/zipball/468603b687a5fe75c1ff33857a45f1726c7b95a9",
+                "reference": "468603b687a5fe75c1ff33857a45f1726c7b95a9",
+                "shasum": ""
+            },
+            "require": {
+                "chillerlan/php-settings-container": "^1.2.2",
+                "ext-mbstring": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phan/phan": "^3.2.2",
+                "phpunit/phpunit": "^8.5",
+                "setasign/fpdf": "^1.8.2"
+            },
+            "suggest": {
+                "chillerlan/php-authenticator": "Yet another Google authenticator! Also creates URIs for mobile apps.",
+                "setasign/fpdf": "Required to use the QR FPDF output."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "chillerlan\\QRCode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kazuhiko Arase",
+                    "homepage": "https://github.com/kazuhikoarase"
+                },
+                {
+                    "name": "Smiley",
+                    "email": "smiley@chillerlan.net",
+                    "homepage": "https://github.com/codemasher"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/chillerlan/php-qrcode/graphs/contributors"
+                }
+            ],
+            "description": "A QR code generator. PHP 7.2+",
+            "homepage": "https://github.com/chillerlan/php-qrcode",
+            "keywords": [
+                "phpqrcode",
+                "qr",
+                "qr code",
+                "qrcode",
+                "qrcode-generator"
+            ],
+            "support": {
+                "issues": "https://github.com/chillerlan/php-qrcode/issues",
+                "source": "https://github.com/chillerlan/php-qrcode/tree/3.4.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/donate?hosted_button_id=WLYUNAT9ZTJZ4",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://ko-fi.com/codemasher",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2021-09-03T17:54:45+00:00"
+        },
+        {
+            "name": "chillerlan/php-settings-container",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chillerlan/php-settings-container.git",
+                "reference": "d1b5284d6eb3a767459738bb0b20073f0cb3eeaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chillerlan/php-settings-container/zipball/d1b5284d6eb3a767459738bb0b20073f0cb3eeaf",
+                "reference": "d1b5284d6eb3a767459738bb0b20073f0cb3eeaf",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "chillerlan\\Settings\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Smiley",
+                    "email": "smiley@chillerlan.net",
+                    "homepage": "https://github.com/codemasher"
+                }
+            ],
+            "description": "A container class for immutable settings objects. Not a DI container. PHP 7.2+",
+            "homepage": "https://github.com/chillerlan/php-settings-container",
+            "keywords": [
+                "PHP7",
+                "Settings",
+                "container",
+                "helper"
+            ],
+            "support": {
+                "issues": "https://github.com/chillerlan/php-settings-container/issues",
+                "source": "https://github.com/chillerlan/php-settings-container"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/donate?hosted_button_id=WLYUNAT9ZTJZ4",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://ko-fi.com/codemasher",
+                    "type": "ko_fi"
+                }
+            ],
+            "time": "2021-09-03T17:33:25+00:00"
+        },
+        {
+            "name": "league/plates",
+            "version": "v3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/plates.git",
+                "reference": "a6a3238e46c6e19af7318fdc36bfbe49b0620231"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/plates/zipball/a6a3238e46c6e19af7318fdc36bfbe49b0620231",
+                "reference": "a6a3238e46c6e19af7318fdc36bfbe49b0620231",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^9.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Plates\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "role": "Developer"
+                },
+                {
+                    "name": "RJ Garcia",
+                    "email": "ragboyjr@icloud.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Plates, the native PHP template system that's fast, easy to use and easy to extend.",
+            "homepage": "https://platesphp.com",
+            "keywords": [
+                "league",
+                "package",
+                "templates",
+                "templating",
+                "views"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/plates/issues",
+                "source": "https://github.com/thephpleague/plates/tree/v3.5.0"
+            },
+            "time": "2023-01-16T20:25:45+00:00"
+        },
+        {
+            "name": "minishlink/web-push",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/web-push-php.git",
+                "reference": "cfee33d4fbfc2e5c217437fab764f03c5f946ea3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/web-push-php/zipball/cfee33d4fbfc2e5c217437fab764f03c5f946ea3",
+                "reference": "cfee33d4fbfc2e5c217437fab764f03c5f946ea3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "php": ">=7.3",
+                "vakata/jwt": "^3.0.4"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Minishlink\\WebPush\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Louis Lagrange",
+                    "email": "lagrange.louis@gmail.com",
+                    "homepage": "https://github.com/Minishlink"
+                }
+            ],
+            "description": "Web Push library for PHP",
+            "homepage": "https://github.com/web-push-libs/web-push-php",
+            "keywords": [
+                "Push API",
+                "WebPush",
+                "notifications",
+                "push",
+                "web"
+            ],
+            "support": {
+                "source": "https://github.com/vakata/web-push-php/tree/master"
+            },
+            "time": "2022-11-14T12:58:42+00:00"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.27.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "904713c5929655dc9b97288b69cfeedad610c9a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/904713c5929655dc9b97288b69cfeedad610c9a1",
+                "reference": "904713c5929655dc9b97288b69cfeedad610c9a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpstan/phpstan": "^0.12.59",
+                "phpunit/phpunit": "~4.5",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/1.27.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-06-09T08:53:42+00:00"
+        },
+        {
+            "name": "psr/http-factory",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-factory.git",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "reference": "12ac7fcd07e5b077433f5f2bee95b3a771bf61be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for PSR-7 HTTP message factories",
+            "keywords": [
+                "factory",
+                "http",
+                "message",
+                "psr",
+                "psr-17",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-factory/tree/master"
+            },
+            "time": "2019-04-30T12:38:16+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-message/tree/master"
+            },
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "psr/simple-cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/master"
+            },
+            "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "tecnickcom/tcpdf",
+            "version": "6.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tecnickcom/TCPDF.git",
+                "reference": "e3cffc9bcbc76e89e167e9eb0bbda0cab7518459"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/e3cffc9bcbc76e89e167e9eb0bbda0cab7518459",
+                "reference": "e3cffc9bcbc76e89e167e9eb0bbda0cab7518459",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "config",
+                    "include",
+                    "tcpdf.php",
+                    "tcpdf_parser.php",
+                    "tcpdf_import.php",
+                    "tcpdf_barcodes_1d.php",
+                    "tcpdf_barcodes_2d.php",
+                    "include/tcpdf_colors.php",
+                    "include/tcpdf_filters.php",
+                    "include/tcpdf_font_data.php",
+                    "include/tcpdf_fonts.php",
+                    "include/tcpdf_images.php",
+                    "include/tcpdf_static.php",
+                    "include/barcodes/datamatrix.php",
+                    "include/barcodes/pdf417.php",
+                    "include/barcodes/qrcode.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "Nicola Asuni",
+                    "email": "info@tecnick.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "TCPDF is a PHP class for generating PDF documents and barcodes.",
+            "homepage": "http://www.tcpdf.org/",
+            "keywords": [
+                "PDFD32000-2008",
+                "TCPDF",
+                "barcodes",
+                "datamatrix",
+                "pdf",
+                "pdf417",
+                "qrcode"
+            ],
+            "support": {
+                "issues": "https://github.com/tecnickcom/TCPDF/issues",
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.6.2"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&currency_code=GBP&business=paypal@tecnick.com&item_name=donation%20for%20tcpdf%20project",
+                    "type": "custom"
+                }
+            ],
+            "time": "2022-12-17T10:28:59+00:00"
+        },
+        {
+            "name": "vakata/asn1",
+            "version": "2.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/asn1.git",
+                "reference": "a20519811025c1959323502e5021ec9c3e12aa8a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/asn1/zipball/a20519811025c1959323502e5021ec9c3e12aa8a",
+                "reference": "a20519811025c1959323502e5021ec9c3e12aa8a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "6.*",
+                "victorjonsson/markdowndocs": "^1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\asn1\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An ASN1 encoder / decoder",
+            "homepage": "https://github.com/vakata/asn1",
+            "keywords": [
+                "asn1",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/asn1/issues",
+                "source": "https://github.com/vakata/asn1/tree/2.3.2"
+            },
+            "time": "2023-01-18T09:52:41+00:00"
+        },
+        {
+            "name": "vakata/authentication",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/authentication.git",
+                "reference": "6153b69ff305ce547ffeb659bf840c6db0da9365"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/authentication/zipball/6153b69ff305ce547ffeb659bf840c6db0da9365",
+                "reference": "6153b69ff305ce547ffeb659bf840c6db0da9365",
+                "shasum": ""
+            },
+            "require": {
+                "vakata/certificate": "^5.8",
+                "vakata/database": "^4.0",
+                "vakata/random": ">=1.1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\authentication\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP authentication library",
+            "homepage": "https://github.com/vakata/authentication",
+            "keywords": [
+                "Authentication",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/authentication/issues",
+                "source": "https://github.com/vakata/authentication/tree/3.5.0"
+            },
+            "time": "2023-01-18T13:11:23+00:00"
+        },
+        {
+            "name": "vakata/cache",
+            "version": "2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/cache.git",
+                "reference": "8e2856af3be3874d40f660682cfeac57df82349b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/cache/zipball/8e2856af3be3874d40f660682cfeac57df82349b",
+                "reference": "8e2856af3be3874d40f660682cfeac57df82349b",
+                "shasum": ""
+            },
+            "require": {
+                "psr/simple-cache": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "9.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\cache\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of caching classes with a common interface",
+            "homepage": "https://github.com/vakata/cache",
+            "keywords": [
+                "cache",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/cache/issues",
+                "source": "https://github.com/vakata/cache/tree/2.4.2"
+            },
+            "time": "2022-12-07T14:36:44+00:00"
+        },
+        {
+            "name": "vakata/certificate",
+            "version": "5.14.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/certificate.git",
+                "reference": "910a33f7567fd3f7e6a49562a5d6709e41c9acfe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/certificate/zipball/910a33f7567fd3f7e6a49562a5d6709e41c9acfe",
+                "reference": "910a33f7567fd3f7e6a49562a5d6709e41c9acfe",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "vakata/asn1": "^2.1.0"
+            },
+            "require-dev": {
+                "clean/phpdoc-md": "dev-master",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\certificate\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Parsing of digital certificates from all Bulgarian vendors",
+            "homepage": "https://github.com/vakata/certificate",
+            "keywords": [
+                "certificate",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/certificate/issues",
+                "source": "https://github.com/vakata/certificate/tree/5.14.2"
+            },
+            "time": "2023-02-15T09:42:19+00:00"
+        },
+        {
+            "name": "vakata/collection",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/collection.git",
+                "reference": "241cbda595473024f916f646d312b9eda32091f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/collection/zipball/241cbda595473024f916f646d312b9eda32091f0",
+                "reference": "241cbda595473024f916f646d312b9eda32091f0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\collection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP collection manipulation class - supports iterators and generators",
+            "keywords": [
+                "collection",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/collection/issues",
+                "source": "https://github.com/vakata/collection/tree/1.6.1"
+            },
+            "time": "2022-06-27T18:44:23+00:00"
+        },
+        {
+            "name": "vakata/config",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/config.git",
+                "reference": "b0fc218d06714d96cc00c2c4a7ff943fe1c3a9dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/config/zipball/b0fc218d06714d96cc00c2c4a7ff943fe1c3a9dc",
+                "reference": "b0fc218d06714d96cc00c2c4a7ff943fe1c3a9dc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "vakata/kvstore": ">=2.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\config\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP config class (parses .env files)",
+            "homepage": "https://github.com/vakata/config",
+            "keywords": [
+                "config",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/config/issues",
+                "source": "https://github.com/vakata/config/tree/2.0.2"
+            },
+            "time": "2023-02-13T12:38:11+00:00"
+        },
+        {
+            "name": "vakata/database",
+            "version": "4.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/database.git",
+                "reference": "b250e3fbdc616f96f6de9b31065f6a1fbb43aa51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/database/zipball/b250e3fbdc616f96f6de9b31065f6a1fbb43aa51",
+                "reference": "b250e3fbdc616f96f6de9b31065f6a1fbb43aa51",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0",
+                "vakata/collection": "~1.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\database\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A database abstraction with support for various drivers.",
+            "homepage": "https://github.com/vakata/database",
+            "keywords": [
+                "database",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/database/issues",
+                "source": "https://github.com/vakata/database/tree/4.5.4"
+            },
+            "time": "2023-02-27T08:52:55+00:00"
+        },
+        {
+            "name": "vakata/di",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/di.git",
+                "reference": "931e4a9eece7bd884f235452e2b1bc45a7bcb74b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/di/zipball/931e4a9eece7bd884f235452e2b1bc45a7bcb74b",
+                "reference": "931e4a9eece7bd884f235452e2b1bc45a7bcb74b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\di\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP DI",
+            "homepage": "https://github.com/vakata/di",
+            "keywords": [
+                "KVStore",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/di/issues",
+                "source": "https://github.com/vakata/di/tree/2.1.1"
+            },
+            "time": "2023-02-14T14:44:26+00:00"
+        },
+        {
+            "name": "vakata/files",
+            "version": "3.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/files.git",
+                "reference": "933db95ac4100f31cd9b89d03c36a6cbcd209456"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/files/zipball/933db95ac4100f31cd9b89d03c36a6cbcd209456",
+                "reference": "933db95ac4100f31cd9b89d03c36a6cbcd209456",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "suggest": {
+                "psr/http-message": "Install if you want to process uploads and HTTP requests",
+                "vakata/database": "Install if you plan on using FileDatabaseStorage",
+                "vakata/http": "Install if you want to process uploads and HTTP requests"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\files\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of file storage classes",
+            "homepage": "https://github.com/vakata/files",
+            "keywords": [
+                "files",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/files/issues",
+                "source": "https://github.com/vakata/files/tree/3.4.2"
+            },
+            "time": "2023-02-18T16:40:47+00:00"
+        },
+        {
+            "name": "vakata/http",
+            "version": "3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/http.git",
+                "reference": "b6351d153d52f99b17bb91882146f3e563bca4e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/http/zipball/b6351d153d52f99b17bb91882146f3e563bca4e1",
+                "reference": "b6351d153d52f99b17bb91882146f3e563bca4e1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0",
+                "vakata/laminas-diactoros-mutable": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "HTTP Request / Response classes (extending Laminas/Diactoros with a few methods)",
+            "homepage": "https://github.com/vakata/http",
+            "keywords": [
+                "http",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/http/issues",
+                "source": "https://github.com/vakata/http/tree/3.2.2"
+            },
+            "time": "2023-02-18T16:46:43+00:00"
+        },
+        {
+            "name": "vakata/ids",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/ids.git",
+                "reference": "4bc4252da9244d330e4ccd1824b109daddc2be00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/ids/zipball/4bc4252da9244d330e4ccd1824b109daddc2be00",
+                "reference": "4bc4252da9244d330e4ccd1824b109daddc2be00",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "clean/phpdoc-md": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\ids\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple PHP IDS based on Expose / PHPIDS rules",
+            "homepage": "https://github.com/vakata/ids",
+            "keywords": [
+                "ids",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/ids/issues",
+                "source": "https://github.com/vakata/ids/tree/master"
+            },
+            "time": "2018-01-10T13:44:24+00:00"
+        },
+        {
+            "name": "vakata/image",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/image.git",
+                "reference": "e7f2a4e4be445a66b6b54f2ffc596988e86e41a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/image/zipball/e7f2a4e4be445a66b6b54f2ffc596988e86e41a1",
+                "reference": "e7f2a4e4be445a66b6b54f2ffc596988e86e41a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "clean/phpdoc-md": "dev-master",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Image manipulation helper class",
+            "homepage": "https://github.com/vakata/image",
+            "keywords": [
+                "image",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/image/issues",
+                "source": "https://github.com/vakata/image/tree/2.3.0"
+            },
+            "time": "2020-03-09T15:10:22+00:00"
+        },
+        {
+            "name": "vakata/intl",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/intl.git",
+                "reference": "7c44fab3652ab474a76d7172ded2dfc22454e970"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/intl/zipball/7c44fab3652ab474a76d7172ded2dfc22454e970",
+                "reference": "7c44fab3652ab474a76d7172ded2dfc22454e970",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "clean/phpdoc-md": "dev-master",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\intl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Translator class using MessageFormatter",
+            "homepage": "https://github.com/vakata/intl",
+            "keywords": [
+                "intl",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/intl/issues",
+                "source": "https://github.com/vakata/intl/tree/master"
+            },
+            "time": "2019-01-30T20:39:49+00:00"
+        },
+        {
+            "name": "vakata/jwt",
+            "version": "3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/jwt.git",
+                "reference": "8dc32f9a7943990c7750272acdde9b62b000ea9b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/jwt/zipball/8dc32f9a7943990c7750272acdde9b62b000ea9b",
+                "reference": "8dc32f9a7943990c7750272acdde9b62b000ea9b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "clean/phpdoc-md": "dev-master",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\jwt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JWT token handling",
+            "homepage": "https://github.com/vakata/jwt",
+            "keywords": [
+                "jwt",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/jwt/issues",
+                "source": "https://github.com/vakata/jwt/tree/3.0.4"
+            },
+            "time": "2022-11-14T12:10:06+00:00"
+        },
+        {
+            "name": "vakata/kvstore",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/kvstore.git",
+                "reference": "4f7450b2b45790688122a4dfe0accb4a86b987d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/kvstore/zipball/4f7450b2b45790688122a4dfe0accb4a86b987d5",
+                "reference": "4f7450b2b45790688122a4dfe0accb4a86b987d5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\kvstore\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple key-value storage class",
+            "homepage": "https://github.com/vakata/kvstore",
+            "keywords": [
+                "KVStore",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/kvstore/issues",
+                "source": "https://github.com/vakata/kvstore/tree/2.0.1"
+            },
+            "time": "2023-02-13T08:11:36+00:00"
+        },
+        {
+            "name": "vakata/laminas-diactoros-mutable",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/laminas-diactoros-mutable.git",
+                "reference": "271506d21eeea89a235d9c4f867c395bdf2ca013"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/laminas-diactoros-mutable/zipball/271506d21eeea89a235d9c4f867c395bdf2ca013",
+                "reference": "271506d21eeea89a235d9c4f867c395bdf2ca013",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php",
+                    "src/functions/create_uploaded_file.legacy.php",
+                    "src/functions/marshal_headers_from_sapi.legacy.php",
+                    "src/functions/marshal_method_from_sapi.legacy.php",
+                    "src/functions/marshal_protocol_version_from_sapi.legacy.php",
+                    "src/functions/marshal_uri_from_sapi.legacy.php",
+                    "src/functions/normalize_server.legacy.php",
+                    "src/functions/normalize_uploaded_files.legacy.php",
+                    "src/functions/parse_cookie_header.legacy.php"
+                ],
+                "psr-4": {
+                    "Laminas\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PSR HTTP Message implementations MUTABLE",
+            "keywords": [
+                "http",
+                "laminas",
+                "psr",
+                "psr-17",
+                "psr-7"
+            ],
+            "support": {
+                "source": "https://github.com/vakata/laminas-diactoros-mutable/tree/1.0.1"
+            },
+            "time": "2023-02-18T21:28:37+00:00"
+        },
+        {
+            "name": "vakata/mail",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/mail.git",
+                "reference": "c9e3ca09f3674b8389769cb296da85a6b390ac3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/mail/zipball/c9e3ca09f3674b8389769cb296da85a6b390ac3d",
+                "reference": "c9e3ca09f3674b8389769cb296da85a6b390ac3d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "clean/phpdoc-md": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\mail\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A few simple mail sender classes",
+            "homepage": "https://github.com/vakata/mail",
+            "keywords": [
+                "mail",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/mail/issues",
+                "source": "https://github.com/vakata/mail/tree/master"
+            },
+            "time": "2019-09-03T09:10:31+00:00"
+        },
+        {
+            "name": "vakata/phptree",
+            "version": "3.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/phptree.git",
+                "reference": "3f01bd49113dd7869b14f44fc0b52a3f0ab6749e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/phptree/zipball/3f01bd49113dd7869b14f44fc0b52a3f0ab6749e",
+                "reference": "3f01bd49113dd7869b14f44fc0b52a3f0ab6749e",
+                "shasum": ""
+            },
+            "require": {
+                "vakata/database": "^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\phptree\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A collection of PHP classes for storing a tree in a relational database",
+            "homepage": "https://github.com/vakata/phptree",
+            "keywords": [
+                "tree",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/phptree/issues",
+                "source": "https://github.com/vakata/phptree/tree/3.1.5"
+            },
+            "time": "2022-11-02T09:40:14+00:00"
+        },
+        {
+            "name": "vakata/random",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/random.git",
+                "reference": "e357c2736a7e5640ba4df1fb4bd2576df9c65a54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/random/zipball/e357c2736a7e5640ba4df1fb4bd2576df9c65a54",
+                "reference": "e357c2736a7e5640ba4df1fb4bd2576df9c65a54",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "clean/phpdoc-md": "dev-master",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\random\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A random int / string / byte generator",
+            "homepage": "https://github.com/vakata/random",
+            "keywords": [
+                "random",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/random/issues",
+                "source": "https://github.com/vakata/random/tree/master"
+            },
+            "time": "2017-06-02T15:05:55+00:00"
+        },
+        {
+            "name": "vakata/session",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/session.git",
+                "reference": "842c79e877ef87e23fd8a98d94325e295111b485"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/session/zipball/842c79e877ef87e23fd8a98d94325e295111b485",
+                "reference": "842c79e877ef87e23fd8a98d94325e295111b485",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "vakata/cache": ">=2.0.0",
+                "vakata/database": "^4.0.0",
+                "vakata/kvstore": ">=1.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\session\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple key-value storage class",
+            "homepage": "https://github.com/vakata/session",
+            "keywords": [
+                "session",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/session/issues",
+                "source": "https://github.com/vakata/session/tree/2.2.0"
+            },
+            "time": "2023-02-18T08:17:01+00:00"
+        },
+        {
+            "name": "vakata/spreadsheet",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/spreadsheet.git",
+                "reference": "270e52f4012705ee1749fe0773767dfeb152f056"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/spreadsheet/zipball/270e52f4012705ee1749fe0773767dfeb152f056",
+                "reference": "270e52f4012705ee1749fe0773767dfeb152f056",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-zip": "*",
+                "php": "^8.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\spreadsheet\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple spreadsheet reader/writer supporting XLS (read-only), XLSX and CSV files",
+            "homepage": "https://github.com/vakata/spreadsheet",
+            "keywords": [
+                "csv",
+                "spreadsheet",
+                "vakata",
+                "xls",
+                "xlsx"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/spreadsheet/issues",
+                "source": "https://github.com/vakata/spreadsheet/tree/2.0.2"
+            },
+            "time": "2022-12-12T09:31:26+00:00"
+        },
+        {
+            "name": "vakata/user",
+            "version": "4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/user.git",
+                "reference": "16172e65b7832816c85186b0fe3b5e88c213638b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/user/zipball/16172e65b7832816c85186b0fe3b5e88c213638b",
+                "reference": "16172e65b7832816c85186b0fe3b5e88c213638b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0",
+                "vakata/kvstore": "2.*"
+            },
+            "suggest": {
+                "vakata/database": "Install if you plan on using UserManagementDatabase"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\user\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP user class",
+            "homepage": "https://github.com/vakata/user",
+            "keywords": [
+                "user",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/user/issues",
+                "source": "https://github.com/vakata/user/tree/4.3.1"
+            },
+            "time": "2023-02-14T13:13:55+00:00"
+        },
+        {
+            "name": "vakata/validation",
+            "version": "1.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/validation.git",
+                "reference": "f9e5ddc553774263c2676147f0badd17dd40d0df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/validation/zipball/f9e5ddc553774263c2676147f0badd17dd40d0df",
+                "reference": "f9e5ddc553774263c2676147f0badd17dd40d0df",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "vakata\\validation\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "vakata",
+                    "email": "github@vakata.com",
+                    "homepage": "http://www.vakata.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A validation class",
+            "homepage": "https://github.com/vakata/validation",
+            "keywords": [
+                "router",
+                "vakata"
+            ],
+            "support": {
+                "issues": "https://github.com/vakata/validation/issues",
+                "source": "https://github.com/vakata/validation/tree/1.9.3"
+            },
+            "time": "2022-05-09T10:01:43+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "dg/composer-cleaner",
+            "version": "v2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/composer-cleaner.git",
+                "reference": "b0fc3d177a9da6c61b5176e57025654391de600c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/composer-cleaner/zipball/b0fc3d177a9da6c61b5176e57025654391de600c",
+                "reference": "b0fc3d177a9da6c61b5176e57025654391de600c",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "composer/composer": "^1.10 || ^2.0",
+                "nette/tester": "^2.2",
+                "phpstan/phpstan": "^0.12"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "DG\\ComposerCleaner\\Plugin"
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                }
+            ],
+            "description": "Victor The Cleaner: removes unnecessary files from vendor directory.",
+            "keywords": [
+                "composer"
+            ],
+            "support": {
+                "issues": "https://github.com/dg/composer-cleaner/issues",
+                "source": "https://github.com/dg/composer-cleaner/tree/v2.2.1"
+            },
+            "time": "2022-04-02T16:11:52+00:00"
+        },
+        {
+            "name": "mouf/nodejs-installer",
+            "version": "0.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/nodejs-installer.git",
+                "reference": "b953c6d62caebe5a1002418e64331504fed339af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/nodejs-installer/zipball/b953c6d62caebe5a1002418e64331504fed339af",
+                "reference": "b953c6d62caebe5a1002418e64331504fed339af",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0.0",
+                "ext-openssl": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.7",
+                "phpunit/phpunit": "^7.4"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": [
+                    "Mouf\\NodeJsInstaller\\NodeJsPlugin"
+                ],
+                "mouf": {
+                    "logo": "node-js.png"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mouf\\NodeJsInstaller\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Mouf\\NodeJsInstaller\\": "tests/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Négrier",
+                    "email": "d.negrier@thecodingmachine.com",
+                    "homepage": "http://mouf-php.com"
+                }
+            ],
+            "description": "An installer package that let's you install NodeJS and NPM as a Composer dependency.",
+            "homepage": "http://mouf-php.com/packages/mouf/nodejs-installer",
+            "keywords": [
+                "installer",
+                "nodejs",
+                "npm"
+            ],
+            "support": {
+                "source": "https://github.com/vakata/nodejs-installer/tree/0.0.6"
+            },
+            "time": "2020-12-06T12:36:57+00:00"
+        },
+        {
+            "name": "vakata/frontend-dependencies",
+            "version": "2.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vakata/frontend-dependencies.git",
+                "reference": "484abcbbc42993ac38fe7ba2937793d4ae2d070f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vakata/frontend-dependencies/zipball/484abcbbc42993ac38fe7ba2937793d4ae2d070f",
+                "reference": "484abcbbc42993ac38fe7ba2937793d4ae2d070f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0.0",
+                "mouf/nodejs-installer": "0.0.6"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "vakata\\frontenddependencies\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "vakata\\frontenddependencies\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Manage front end depedencies from composer",
+            "support": {
+                "issues": "https://github.com/vakata/frontend-dependencies/issues",
+                "source": "https://github.com/vakata/frontend-dependencies/tree/2.0.10"
+            },
+            "time": "2020-12-06T12:38:23+00:00"
+        }
+    ],
+    "aliases": [
+        {
+            "package": "minishlink/web-push",
+            "version": "9999999-dev",
+            "alias": "7.0.0",
+            "alias_normalized": "7.0.0.0"
+        }
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "minishlink/web-push": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.1",
+        "ext-iconv": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-simplexml": "*",
+        "ext-sockets": "*",
+        "ext-zip": "*"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
